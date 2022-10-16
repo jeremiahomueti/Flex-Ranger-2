@@ -1,0 +1,37 @@
+ If we don't turn on flex-wrap, align cotent does nothing for us.
+
+
+ Align-self is similar to align items, except that it's actually
+ a style that we add to individual items, as opposed to an entire
+ container or section - as is the case with align-items.
+
+
+ It doesn't necessarily need to be individual items, we could
+ also style individual group of elements.
+
+ To style on the fifth element in the container, we do:
+
+ div:nth-of-type(5){
+    align-self: center;
+ }
+
+ FLEX SHORTHAND
+
+/* Three Values: flex-grow | flex-shrink | flex-basis */
+ Flex: 2 2 10%;
+
+ If you have two values, then:
+ Two Values: flex-grow | flex-shrink
+ Flex 2 2;
+
+ If you have two values, but one of them is a width, or
+ pixel, or em, then:
+ Two Values: flex-grow | flex-basis
+ Flex 2 20px;
+
+
+ And if you just have one value, with no unit, it's going to 
+ be flex-grow by default.
+
+ One Value: flex-grow
+ Flex: 2;
